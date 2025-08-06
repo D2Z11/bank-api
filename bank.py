@@ -31,7 +31,9 @@ class Bank:
         returns:
             True if user is successfully logged in, False otherwise
         """
-        return password == self.__bank_data[user_name]["password"]
+        if (self.__bank_data[user_name] != None):
+            return password == self.__bank_data[user_name]["password"]
+        return False
     
     def __process_transaction(self, user_name, amount):
         """
@@ -84,7 +86,7 @@ class Bank:
         returns:
             the current balance of the user
         """
-        return self.__bank_data[user_name]["balance"]
+        return self.__user_login(user_name, password) ? self.__bank_data[user_name]["balance"] : False
     
     def deposit(self, user_name, password, amount):
         """
