@@ -37,6 +37,7 @@ class BankUser:
         ...
     
     def withdraw(self, amount):
+        self.bank.withdraw(self.user_name, self.__password,-1* amount)
         """
         TODO: complete this function that 
         """
