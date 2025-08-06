@@ -24,9 +24,16 @@ class BankUser:
         return self.bank.get_balance(self.user_name , self.__password)#literally break down the code
     
     def deposit(self, amount):
+        if amount <= 0:
+                print("invalid amount")
+        else 
+                print("Deposite Valid")
+        self.bank.deposit(self.user_name, self.password, amount)#same logic as above
+            
         """
         TODO: complete this function that deposits money into the current users account
         """
+        
         ...
     
     def withdraw(self, amount):
