@@ -107,5 +107,5 @@ class Bank:
         Make sure to use __user_login to ensure that user_name and password are a match
         Make sure to only use __process_transaction to make changes to the users balance, not directly
         """
-        if (amount > 0 and self.__user_login(user_name, password)):
+        if (self.get_balance() >= amount and self.__user_login(user_name, password)):
             self.__process_transaction(-amount)
