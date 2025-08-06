@@ -10,7 +10,7 @@ class BankUser:
         self.__create_user(bank)
     
     def __create_user(self, bank):
-        bank.create_user(self.user_name, self.password)
+        bank.create_user(self.user_name, self.password) #this is automatically added #since bank data is aprivate variable we arent able to call it here
         """
         TODO: complete this function that adds the current user to the bank database
         """
@@ -25,11 +25,11 @@ class BankUser:
     
     def deposit(self, amount):
         if amount <= 0:
-                print("invalid amount")
-        else 
-                print("Deposite Valid")
-        self.bank.deposit(self.user_name, self.password, amount)#same logic as above
-            
+            print("invalid amount")
+        else:
+            print("Deposite Valid")
+            self.bank.deposit(self.user_name, self.password, amount)#same logic as above
+            #consistantly tab the code within each of our statements are lined up
         """
         TODO: complete this function that deposits money into the current users account
         """
