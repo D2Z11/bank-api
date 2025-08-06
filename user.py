@@ -10,7 +10,7 @@ class BankUser:
         self.__create_user(bank)
     
     def __create_user(self, bank):
-        bank.create_user(self.user_name, self.__password)
+        bank.create_user(self.user_name, self.__password) #this is automatically added #since bank data is aprivate variable we arent able to call it here
         """
         TODO: complete this function that adds the current user to the bank database
         """
