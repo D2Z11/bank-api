@@ -1,6 +1,6 @@
 class BankUser:
     def __init__(self, user_name, password, bank):
-        #save users user_name
+        #save users user_name hellloo
         self.user_name = user_name
         #save users password
         self.__password = password
